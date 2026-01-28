@@ -1,0 +1,168 @@
+body{
+    background-image: url(heiba\ background\ .png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    top: 200px;
+}
+
+.imgfr{
+    border: solid;
+    border-radius: 20px;
+    border-color: white;
+    height: 100px;
+    width: 350px;
+    position: relative;
+    bottom: 200px;
+    left: 30px;
+}
+
+#imgtop{
+   position: relative;
+   bottom: 15px;
+   right: 20px;
+}
+
+div > p{
+   font-size: 50px;
+   font-family:serif ;
+   color: white;
+   position: relative;
+   bottom: 180px;
+   left: 120px;
+}
+
+#dis{
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    position: relative;
+    left: 50px;
+    bottom: 150px;
+    width: 720px;
+}
+
+span{
+    white-space: pre;
+}
+
+.ndlogo{
+    position: relative;
+    bottom: 300px;
+    left: 560px;
+}
+
+nav{
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
+    font-size: 90px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    bottom: 900px;
+    left: 70px;
+    width: 500px;
+    height: 300px;
+}
+
+#bface{
+    background: red;
+    border-radius: 50px;
+    width: 200px;
+    height: 60px;
+    color: white;
+    border-color: red;
+    position: relative;
+    bottom: 340px;
+    left: 270px;
+    box-shadow: 3px 3px 1px;
+}
+
+#cleck{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+
+h2{
+    font-size: 90px;
+    padding-left: 20px;
+  }  
+
+  .phon{
+    background-color: white;
+    width: 600px;
+    height: 340px;
+    border-radius: 20px;
+    position: relative;
+    bottom: 850px;
+    left: 60px;
+  }
+
+  #phon{
+    color: red;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 60px;
+    position: relative;
+  }
+
+  #num{
+    white-space: pre;
+    position: relative;
+    bottom: 150px;
+    left: -210px;
+    color: red;
+  }
+
+  #h{
+    background-color: green;
+    font-size: 40px;
+    position: relative;
+    bottom: 500px;
+    left: 310px;
+    border-radius: 20px;
+    border: solid rgb(2, 80, 2);
+    width: 250px;
+  }
+
+  #i{
+       background-color: green;
+    font-size: 40px;
+    position: relative;
+    bottom: 511px;
+    left: 310px;
+    border-radius: 20px;
+    border: solid rgb(2, 80, 2);
+    width: 250px;
+  }
+
+  #u{
+       background-color: green;
+    font-size: 40px;
+    position: relative;
+    bottom: 522px;
+    left: 310px;
+    border-radius: 20px;
+    border: solid rgb(2, 80, 2);
+    width: 250px;
+  }
+
+  #y{
+       background-color: green;
+    font-size: 40px;
+    position: relative;
+    bottom: 533px;
+    left: 310px;
+    border-radius: 20px;
+    border: solid rgb(2, 80, 2);
+    width: 250px;
+  }
+
+  #q{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    right: 20px;
+  }
